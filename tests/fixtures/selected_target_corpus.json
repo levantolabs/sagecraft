@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "label_source": "Manual visual review of actual retained screenshots; labels fixed before paid evaluation. No fabricated image labels.",
+  "limitations": [
+    "Development and validation frames may share nearby scene geometry; validation is a held-out image check, not broad generalization.",
+    "Selected-dead, player-selected, occluded numeral require future actual examples; simulated tests cover schema only.",
+    "Raw capture bytes remain ignored local data; versioned manifest pins paths/member and SHA256."
+  ],
+  "cases": [
+    {
+      "id": "continuous-level2",
+      "split": "development",
+      "source": "data/grind-only-runs/continuous1/trial-evidence/1ad83772-360d-49f1-a3ca-7a7d34dcbd7e/21a4dea477a3be2f2715ddfb48b6e5be3ee5d1f1811e8ace1ac24cb110d8047c.jpg",
+      "sha256": "21a4dea477a3be2f2715ddfb48b6e5be3ee5d1f1811e8ace1ac24cb110d8047c",
+      "captured_at": "2026-10-01T15:11:14.387593+00:00",
+      "source_db": "data/grind-only-runs/continuous1/events.sqlite3",
+      "source_event_id": "b47b6dd3-129a-4ec6-9b00-e1a1a95d53a9",
+      "original_wire_sha256": "1bbaaf4812dc56424f63cbaa8a6ebd3c6a590f9f2e88c21b847c32b00bdae9dd",
+      "target_box": [
+        140,
+        485,
+        483,
+        630
+      ],
+      "expected": {
+        "selected_hud": "present",
+        "name": "Ragged Timber Wolf",
+        "level": 2,
+        "target_kind": "creature",
+        "life_state": "alive"
+      }
+    },
+    {
+      "id": "compact-absent",
+      "split": "development",
+      "source": "data/grind-only-runs/compact2/trial-evidence/b42248d0-aaa9-4610-9798-03fda6e44231/839b48a71bf6de674813508ea9204bf14bd1a73117d7336c85cfe25201593246.jpg",
+      "sha256": "839b48a71bf6de674813508ea9204bf14bd1a73117d7336c85cfe25201593246",
+      "captured_at": "2026-10-01T14:22:02.246667+00:00",
+      "source_db": "data/grind-only-runs/compact2/events.sqlite3",
+      "source_event_id": "a9c160bb-5ae3-4623-98f4-d080987c707f",
+      "original_wire_sha256": "e50d77960c76c00d61bb04660f2f8ab56ce0da8ba954d508a57b20b27c3f24c2",
+      "target_box": [
+        140,
+        485,
+        483,
+        630
+      ],
+      "expected": {
+        "selected_hud": "absent",
+        "name": null,
+        "level": null,
+        "target_kind": "unknown",
+        "life_state": "unknown"
+      }
+    },
+    {
+      "id": "compact-level1",
+      "split": "development",
+      "source": "data/grind-only-runs/compact2/trial-evidence/b42248d0-aaa9-4610-9798-03fda6e44231/252fbc6e05fc43a178e66a86437d00b4391804f89dc92dc7e074924a46651838.jpg",
+      "sha256": "252fbc6e05fc43a178e66a86437d00b4391804f89dc92dc7e074924a46651838",
+      "captured_at": "2026-10-01T14:22:07.826150+00:00",
+      "source_db": "data/grind-only-runs/compact2/events.sqlite3",
+      "source_event_id": "424f922d-3ca9-4297-8a0e-c0cff869c2be",
+      "original_wire_sha256": "289c79fe5e196b39b4b5b48bbfa083b1b2dafd9bff36cd671622e97904c306f4",
+      "target_box": [
+        140,
+        485,
+        483,
+        630
+      ],
+      "expected": {
+        "selected_hud": "present",
+        "name": "Ragged Young Wolf",
+        "level": 1,
+        "target_kind": "creature",
+        "life_state": "alive"
+      }
+    },
+    {
+      "id": "second-run-level2",
+      "split": "validation",
+      "source": "data/grind-only-runs/compact4/trial-evidence/0488c804-f05e-441f-9a0c-904535f135a3/c9676a4d0a9160f45e254c2c88df0b0deefad322556134517b3fe89b097e8176.jpg",
+      "sha256": "c9676a4d0a9160f45e254c2c88df0b0deefad322556134517b3fe89b097e8176",
+      "captured_at": "2026-10-01T15:04:58.878042+00:00",
+      "source_db": "data/grind-only-runs/compact4/events.sqlite3",
+      "source_event_id": "1e027901-8e23-476f-982d-fc04ec9f1953",
+      "original_wire_sha256": "3946deb724dced04549a9e5e507e3bb5dc92f97b9f9d1e5e97c9ffba55e0a0a2",
+      "target_box": [
+        140,
+        485,
+        483,
+        630
+      ],
+      "expected": {
+        "selected_hud": "present",
+        "name": "Ragged Timber Wolf",
+        "level": 2,
+        "target_kind": "creature",
+        "life_state": "alive"
+      }
+    },
+    {
+      "id": "damaged-level1",
+      "split": "validation",
+      "source": "data/grind-only-runs/compact2/trial-evidence/b42248d0-aaa9-4610-9798-03fda6e44231/ccbdb4eaaccc9200b857fb6b3300e8c2c2c9e7c0d006da82629ae011a84a3c41.jpg",
+      "sha256": "ccbdb4eaaccc9200b857fb6b3300e8c2c2c9e7c0d006da82629ae011a84a3c41",
+      "captured_at": "2026-10-01T14:22:13.501509+00:00",
+      "source_db": "data/grind-only-runs/compact2/events.sqlite3",
+      "source_event_id": "fd829171-5f39-49ca-b540-e688357c4ac7",
+      "original_wire_sha256": "476d89331f53fef41a259034c9be05f2c7e6ce5878741b1c3725cc4b16b094e1",
+      "target_box": [
+        140,
+        485,
+        483,
+        630
+      ],
+      "expected": {
+        "selected_hud": "present",
+        "name": "Ragged Young Wolf",
+        "level": 1,
+        "target_kind": "creature",
+        "life_state": "alive"
+      }
+    },
+    {
+      "id": "corpse-without-selection",
+      "split": "validation",
+      "source": "earlier development run (image not included)",
+      "sha256": "2521849d0b4206b4c044e8aeea62665115f70495dfe5d4f3ecc4aa2f78ba57dc",
+      "target_box": [
+        1040,
+        620,
+        1280,
+        720
+      ],
+      "expected": {
+        "selected_hud": "absent",
+        "name": null,
+        "level": null,
+        "target_kind": "unknown",
+        "life_state": "unknown"
+      },
+      "notes": "Earlier development character. Visible world corpse; no selected target HUD. Capture timestamp not independently established."
+    },
+    {
+      "id": "friendly-sten",
+      "split": "validation",
+      "source": "earlier development run (image not included)",
+      "sha256": "28cdf2ff3d0919e0aad0c3c0203b7a4e6628be17535525ea60dd58de3150278b",
+      "target_box": [
+        1040,
+        620,
+        1280,
+        720
+      ],
+      "expected": {
+        "selected_hud": "present",
+        "name": "Sten Stoutarm",
+        "level": 5,
+        "target_kind": "friendly_or_self",
+        "life_state": "alive"
+      },
+      "notes": "Earlier development character. Player level2 distinct from target level5."
+    }
+  ]
+}

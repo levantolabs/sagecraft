@@ -1,0 +1,278 @@
+{
+  "source": "earlier live run, corpse_select_0 fresh dispatch guard; no input between source and fresh",
+  "records": [
+    {
+      "pair": 0,
+      "time": "2026-10-02T15:54:22.525164+00:00",
+      "point": [
+        982,
+        593
+      ],
+      "crop_box": [
+        954,
+        573,
+        1010,
+        613
+      ],
+      "expected": false,
+      "metrics": {
+        "approved": false,
+        "method": "rejected",
+        "raw_mean": 8.9174,
+        "raw_changed_fraction": 0.0777,
+        "filtered_mean": 5.6378,
+        "filtered_changed_fraction": 0.033
+      },
+      "fixtures": [
+        {
+          "file": "pair00-source.png",
+          "sha256": "74e954a59040fed7727bf2410fe831b54907bf226231b6a9ca4d3978b95c79d5",
+          "original_sha256": "4a01cb97311f35baa1a0f3ee3ac48cd2c3e5af96f548aeec2e6b0b8c0d0c0d3b",
+          "frame_id": "29b1ddbe-6214-4575-a812-3c57a3463989",
+          "captured_at": "2026-10-02T15:54:18.747607+00:00"
+        },
+        {
+          "file": "pair00-fresh.png",
+          "sha256": "b3df35acdd873fdf555a94d9945d550805ee8ca4d2f239ceddfecd47eee86be1",
+          "original_sha256": "bc1496350ab8903558246738e7d2cec4c7a51e26e2ad7cd2b67c261aa10c1201",
+          "frame_id": "e83807ee-237c-43a8-b15c-c2a6d6da041c",
+          "captured_at": "2026-10-02T15:54:22.362626+00:00"
+        }
+      ]
+    },
+    {
+      "pair": 4,
+      "time": "2026-10-02T15:54:38.675606+00:00",
+      "point": [
+        981,
+        591
+      ],
+      "crop_box": [
+        953,
+        571,
+        1009,
+        611
+      ],
+      "expected": true,
+      "metrics": {
+        "approved": true,
+        "method": "small_particle_filter",
+        "raw_mean": 2.735,
+        "raw_changed_fraction": 0.017,
+        "filtered_mean": 1.7091,
+        "filtered_changed_fraction": 0.0076
+      },
+      "fixtures": [
+        {
+          "file": "pair04-source.png",
+          "sha256": "8f6422b610852651d5da7d465ecd814ce5e8d6d8123f64c4a2d126a8d733a59e",
+          "original_sha256": "dfdf4460ab42e41c7490ef48b11a3c337be09d3398ef430ced3c262fc6178dda",
+          "frame_id": "5279bdbb-aa95-43fd-943e-32298a7f98e4",
+          "captured_at": "2026-10-02T15:54:34.873335+00:00"
+        },
+        {
+          "file": "pair04-fresh.png",
+          "sha256": "f540804e6d3d3269e17e16da77f21d90c31ebfaea2672bfb12be865ad1051363",
+          "original_sha256": "a499c41aa80f1b7bf5db8d186d335deeec4924275d0e8000cca0d35d0504f885",
+          "frame_id": "6a59ea02-2e5c-43a5-8d33-f26a3d773246",
+          "captured_at": "2026-10-02T15:54:38.516271+00:00"
+        }
+      ]
+    },
+    {
+      "pair": 6,
+      "time": "2026-10-02T15:54:45.976102+00:00",
+      "point": [
+        981,
+        591
+      ],
+      "crop_box": [
+        953,
+        571,
+        1009,
+        611
+      ],
+      "expected": true,
+      "metrics": {
+        "approved": true,
+        "method": "small_particle_filter",
+        "raw_mean": 2.7064,
+        "raw_changed_fraction": 0.0179,
+        "filtered_mean": 1.6781,
+        "filtered_changed_fraction": 0.0031
+      },
+      "fixtures": [
+        {
+          "file": "pair06-source.png",
+          "sha256": "9205b0d46b9aa5ed546aea99ab3c421621a5a3f0b1cfb08ff29404a7d2ca4be8",
+          "original_sha256": "c1250ff5383cf7150ffc1543b3c4d64e51f9ad904dab87973cb72c33042c21d3",
+          "frame_id": "eaffd3e7-19d0-48e1-840a-2eee936ce439",
+          "captured_at": "2026-10-02T15:54:41.963168+00:00"
+        },
+        {
+          "file": "pair06-fresh.png",
+          "sha256": "4a560f80acd6a2836ce92c47c205c0be1a3d08ce341fcecb4f3eaca8183e748c",
+          "original_sha256": "9f469951bdacb2a032c190db79ea08fad545cc6aa77f9b06152b831c7c465248",
+          "frame_id": "ec5101f5-ab08-4f5b-93d3-471797c7952b",
+          "captured_at": "2026-10-02T15:54:45.819007+00:00"
+        }
+      ]
+    },
+    {
+      "pair": 7,
+      "time": "2026-10-02T15:54:50.199194+00:00",
+      "point": [
+        981,
+        591
+      ],
+      "crop_box": [
+        953,
+        571,
+        1009,
+        611
+      ],
+      "expected": true,
+      "metrics": {
+        "approved": true,
+        "method": "small_particle_filter",
+        "raw_mean": 2.8905,
+        "raw_changed_fraction": 0.0214,
+        "filtered_mean": 1.8167,
+        "filtered_changed_fraction": 0.017
+      },
+      "fixtures": [
+        {
+          "file": "pair07-source.png",
+          "sha256": "e41df8f2c798eae8950f889568231b2d37614206d601e35a8df9be9ed8f7976d",
+          "original_sha256": "53d94ba2f7a9fccf56a867b27e9c929db121efc44f2b6b2daf0e3cffbe645c57",
+          "frame_id": "468262a3-d482-42f7-8c05-cb0da0d95891",
+          "captured_at": "2026-10-02T15:54:46.149972+00:00"
+        },
+        {
+          "file": "pair07-fresh.png",
+          "sha256": "ef73dcd5464c703d92d0ae96cf0733212b2b00c1bd209d1dad20571185b62ed9",
+          "original_sha256": "5da3727eb286bc2fb37cf07b0ccd2b148257ad47dcf6deb6480d15b1f6a97ca3",
+          "frame_id": "3b5949e2-76a1-4c09-84e5-15f49626ed88",
+          "captured_at": "2026-10-02T15:54:50.023257+00:00"
+        }
+      ]
+    },
+    {
+      "pair": 11,
+      "time": "2026-10-02T15:55:04.425228+00:00",
+      "point": [
+        981,
+        591
+      ],
+      "crop_box": [
+        953,
+        571,
+        1009,
+        611
+      ],
+      "expected": true,
+      "metrics": {
+        "approved": true,
+        "method": "small_particle_filter",
+        "raw_mean": 3.014,
+        "raw_changed_fraction": 0.021,
+        "filtered_mean": 1.8168,
+        "filtered_changed_fraction": 0.0063
+      },
+      "fixtures": [
+        {
+          "file": "pair11-source.png",
+          "sha256": "c45a6087fc14a55226e53808c2b10b9dd2db2df669f2c28f95f7cdaa9536a242",
+          "original_sha256": "a855d3e7aa96b3b1c437c3669a974d68ed4ca945596785b9a7082068eca0fe49",
+          "frame_id": "9234fd6e-4453-4d7f-815d-a9f794f211ff",
+          "captured_at": "2026-10-02T15:55:00.508728+00:00"
+        },
+        {
+          "file": "pair11-fresh.png",
+          "sha256": "5f41ced0eb73929df6158fb93ad248c68157c4876af2e0d6b89da2058c09c18a",
+          "original_sha256": "998af9ffcc58a8950855c122e87b5fc823f9b599d6dbb7d2c6a68959742bb3b6",
+          "frame_id": "90ac6715-69b5-45bc-b043-de4b805ee45c",
+          "captured_at": "2026-10-02T15:55:04.264510+00:00"
+        }
+      ]
+    },
+    {
+      "pair": 15,
+      "time": "2026-10-02T15:55:26.632386+00:00",
+      "point": [
+        981,
+        591
+      ],
+      "crop_box": [
+        953,
+        571,
+        1009,
+        611
+      ],
+      "expected": true,
+      "metrics": {
+        "approved": true,
+        "method": "small_particle_filter",
+        "raw_mean": 2.2097,
+        "raw_changed_fraction": 0.0134,
+        "filtered_mean": 1.3568,
+        "filtered_changed_fraction": 0.004
+      },
+      "fixtures": [
+        {
+          "file": "pair15-source.png",
+          "sha256": "5128a2d48abe6133df2a56e508b7749e30271e0777bee3da8251c1de8606d39b",
+          "original_sha256": "196fed45e40cbfa5d8961c8fc8507eb0741d6d8635e78622a43a332a4267e2d8",
+          "frame_id": "f4f98e69-196e-477c-8b2f-4169af83c3b3",
+          "captured_at": "2026-10-02T15:55:22.951985+00:00"
+        },
+        {
+          "file": "pair15-fresh.png",
+          "sha256": "e1f005d8ec98232a2a312fb60c380aff84425bc21ab29c085f0a349f6c851eb9",
+          "original_sha256": "d271f8ccaf2664e50f4635bc8d4e6a3f3b78a94602f81f958b442bf7112b5d2d",
+          "frame_id": "fe943474-1b2a-48d4-9c23-7ae7ca64c5a4",
+          "captured_at": "2026-10-02T15:55:26.476087+00:00"
+        }
+      ]
+    },
+    {
+      "pair": 23,
+      "time": "2026-10-02T15:55:57.923983+00:00",
+      "point": [
+        981,
+        591
+      ],
+      "crop_box": [
+        953,
+        571,
+        1009,
+        611
+      ],
+      "expected": true,
+      "metrics": {
+        "approved": true,
+        "method": "small_particle_filter",
+        "raw_mean": 3.208,
+        "raw_changed_fraction": 0.0232,
+        "filtered_mean": 1.8433,
+        "filtered_changed_fraction": 0.004
+      },
+      "fixtures": [
+        {
+          "file": "pair23-source.png",
+          "sha256": "8bdc2d426a2bcde22a51fcda989bfd5b59bde51b3911d4fa586ab65902be6bac",
+          "original_sha256": "0f10a96922f62db402869a128882a7ffcce884f27aae53f2c7934c3147bd28e0",
+          "frame_id": "20b4bedf-fff6-4d6e-9962-84b359f59d89",
+          "captured_at": "2026-10-02T15:55:54.056910+00:00"
+        },
+        {
+          "file": "pair23-fresh.png",
+          "sha256": "5985f69255d5dbde074769edc09d4aeab5f41ddba892426c47ea96ba2f070879",
+          "original_sha256": "294f54ac1f91f5b70dc08c5dbd04fce829d4eef20a71687383271e2895c878bb",
+          "frame_id": "e4e13932-29e0-4ca9-b234-a733f97c6f6b",
+          "captured_at": "2026-10-02T15:55:57.778246+00:00"
+        }
+      ]
+    }
+  ]
+}

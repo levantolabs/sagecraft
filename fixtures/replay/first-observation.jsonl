@@ -1,0 +1,3 @@
+{"type":"event","event_id":"fixture-evt-001","occurred_at":"2026-09-26T10:00:00+00:00","event_type":"session_started","payload":{"mode":"replay"}}
+{"type":"frame","frame_id":"fixture-frame-001","captured_at":"2026-09-26T10:00:00+00:00","width":1280,"height":720}
+{"type":"event","event_id":"fixture-evt-002","occurred_at":"2026-09-26T10:00:01+00:00","event_type":"observation","payload":{"source":"fixture","status":"world_visible","chosen_by":"mock"}}

@@ -1,0 +1,58 @@
+version: 1
+# Starting locations for hunting, from public game databases and earlier runs.
+# Each entry is a hypothesis to scout, not a verified route or a promise of creatures.
+areas:
+  - id: cold_start_historical_patch_01
+    label: Starting-zone hunting patch from an earlier run
+    coordinate: [28.5, 74.2]
+    coordinate_space: client_displayed_zone_coordinates
+    zone_reference: Coldridge Valley
+    arrival_radius: 0.6
+    expected_level_range: null
+    landmark_description: null
+    approach_waypoint_ids: []
+    status: reference_unverified
+    client_version: unknown
+    source:
+      kind: earlier_run_observation
+      claim: An earlier development run found creatures to hunt near 28.4,74.6. Current population and levels are unverified.
+      current_population_verified: false
+      source_frame_ids: []
+  - id: coldridge_west_boars
+    label: Western Coldridge boar grounds near Talin's camp
+    coordinate: [22.8, 72.5]
+    coordinate_space: client_displayed_zone_coordinates
+    zone_reference: Coldridge Valley
+    arrival_radius: 0.6
+    expected_level_range: [3, 3]
+    primary_targets: [Small Crag Boar]
+    landmark_description: Open ground near the western camp; approach only on visibly safe terrain.
+    approach_waypoint_ids: []
+    status: reference_unverified
+    client_version: Classic reference; current population unverified
+    source:
+      kind: classic_database_spawn_reference
+      url: https://classicdb.ch/?npc=708
+      retrieved_at: '2026-10-04'
+      claim: ClassicDB lists Small Crag Boar level3, with Dun Morogh spawn points22.82,72.48 and22.74,72.42. Rounded destination is a scouting hypothesis, not verified current population or a walkable route.
+      current_population_verified: false
+      source_frame_ids: []
+  - id: coldridge_southeast_troggs
+    label: Southeastern Coldridge Rockjaw hills
+    coordinate: [30.1, 75.6]
+    coordinate_space: client_displayed_zone_coordinates
+    zone_reference: Coldridge Valley
+    arrival_radius: 0.6
+    expected_level_range: [2, 2]
+    primary_targets: [Burly Rockjaw Trogg, Rockjaw Trogg]
+    landmark_description: Hills southeast of the starting wolf grounds; inspect slope and nearby enemies before approaching.
+    approach_waypoint_ids: []
+    status: reference_unverified
+    client_version: Classic reference; current population unverified
+    source:
+      kind: classic_database_spawn_reference
+      url: https://classicdb.ch/?npc=724
+      retrieved_at: '2026-10-04'
+      claim: ClassicDB lists Burly Rockjaw Trogg level2, with Dun Morogh spawn points30.11,75.63 and30.69,75.13. Rounded destination is a scouting hypothesis, not verified current population or a walkable route.
+      current_population_verified: false
+      source_frame_ids: []

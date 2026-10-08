@@ -1,0 +1,110 @@
+# SageCraft profile template. Copy it to data/ (ignored by git) and fill it in:
+#   cp profiles/template.yaml data/my-profile.yaml
+# See docs/setup.md for every step. Values marked "campaign" are what the
+# level-five campaign used.
+game:
+  edition: wow_forever
+  environment: null          # set with `sage-wow configure --environment`
+character:
+  class: priest
+  name: null                 # your character's exact name (prevents self-targeting)
+  surname: null
+client:
+  window_id: null            # from `sage-wow doctor`, set with `configure --window-id`
+  expected_bundle_id: com.blizzard.worldofwarcraft
+  installation_path: null    # absolute path to the game .app
+calibration:
+  calibrated_at: null        # written by `sage-wow calibrate`
+  window_id: null
+  window_bounds: null
+  # Fill in from your calibration screenshot. Regions are [left, top, right, bottom]
+  # in screenshot pixels; see docs/setup.md for what each one covers.
+  ui_layout: null
+  # ui_layout:
+  #   version: 1
+  #   id: my-layout
+  #   provenance: calibrated 2026-10-08 from calibration/frame-....jpg
+  #   image_width: 1496
+  #   image_height: 967
+  #   regions:
+  #     player_frame: [0, 0, 0, 0]
+  #     player_health: [0, 0, 0, 0]
+  #     target_frame: [0, 0, 0, 0]
+  #     target_health: [0, 0, 0, 0]
+  #     target_overlay: [0, 0, 0, 0]
+  #     minimap: [0, 0, 0, 0]
+  #     coordinate_primary: [0, 0, 0, 0]
+  #     coordinate_alternate: [0, 0, 0, 0]
+  #     coordinate_magnification: [0, 0, 0, 0]
+  #     local_caption: [0, 0, 0, 0]
+grind_only:
+  enabled: true
+  session_id: null           # a new unique name for every run
+  goal_level: 5
+  duration_seconds: 7200
+  level_check_seconds: 300
+  # Screen boxes inside the calibrated frames above.
+  player_level_box: null     # your level badge, inside player_frame
+  target_level_box: null     # the target's level badge, inside target_overlay
+  # target_name_box: [0, 0, 0, 0]
+  # player_mana_box: [0, 0, 0, 0]
+
+  # Which creature levels may be attacked, by your level (defaults apply to unlisted levels).
+  target_bands_by_player_level:
+    3: [1, 4]
+    4: [1, 4]
+  preferred_target_bands_by_player_level:
+    3: [2, 4]
+    4: [2, 4]
+  hunting_progression_by_player_level:
+    3:
+      primary_targets: [Small Crag Boar, Burly Rockjaw Trogg, Rockjaw Trogg]
+      area_ids: [coldridge_west_boars, coldridge_southeast_troggs]
+    4:
+      primary_targets: [Small Crag Boar, Burly Rockjaw Trogg, Rockjaw Trogg]
+      area_ids: [coldridge_west_boars, coldridge_southeast_troggs]
+  target_names: []
+  area_catalog: ../profiles/hunting-areas.yaml   # relative to this profile file
+  fixed_hunting_area: coldridge_southeast_troggs # campaign; remove to let Sage choose between areas
+
+  # Combat.
+  smite_burst_count: 3       # campaign
+  cast_wait_seconds: 2.2     # campaign
+  target_opening_cast: true  # campaign: one Smite right after Sage targets an eligible enemy
+  heal_health_fraction: 0.30
+  combat_log_enabled: true   # campaign: run /combatlog in game first; needs client.installation_path
+  selected_target_observer:  # campaign: Sage reads the selected target's frame
+    enabled: true
+    backend: sage
+    timeout_seconds: 12
+
+  # Movement and screenshots.
+  move_seconds: 1.0
+  turn_seconds: 0.35
+  clean_world_observation: true   # hide the UI (Option+Z) for clean travel screenshots
+  clean_world_max_age_seconds: 8
+
+  # Evidence kept on disk for each run.
+  evidence_max_bytes: 8589934592
+  disk_reserve_bytes: 1073741824
+controls:
+  stop_hotkey: ctrl+alt+escape
+  # macOS virtual keycodes. Each binding needs a `verified_from` note saying where
+  # you checked it, e.g. "Key Bindings menu, 2026-10-08".
+  bindings:
+    target_enemy: {keycode: 48, verified_from: null}   # Tab
+    forward: {keycode: 13, verified_from: null}        # W
+    backward: {keycode: 1, verified_from: null}        # S
+    turn_left: {keycode: 123, verified_from: null}     # Left arrow
+    turn_right: {keycode: 124, verified_from: null}    # Right arrow
+    strafe_left: {keycode: null, verified_from: null}
+    strafe_right: {keycode: null, verified_from: null}
+    smite: {keycode: null, verified_from: null}
+    escape: {keycode: 53, verified_from: null}
+    toggle_hud:                                        # Option+Z
+      keycodes: [58, 6]
+      hold_seconds: 0.08
+      verified_from: null
+sage:
+  endpoint: https://sage.levanto.ai
+  request_timeout_seconds: 12

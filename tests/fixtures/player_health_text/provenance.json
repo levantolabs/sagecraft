@@ -1,0 +1,15 @@
+{
+  "source_trial": 47,
+  "source_frame_id": "e9e03067-092e-4fee-8719-b9f12a510d12",
+  "source_image_sha256": "9514f390ab08f35deb6b7c51e85b2d255a4b2451e01a806799428c3bfc743626",
+  "source_captured_at": "2026-10-03T09:03:59.228393+00:00",
+  "crop_box": [
+    191,
+    405,
+    436,
+    433
+  ],
+  "fixture": "full.png",
+  "fixture_sha256": "872f8abe3e9af76b14d643778b92d9df07d018137fdd16b97c0d86cba0e9fa03",
+  "claim": "Lossless decoded crop of visible62/62health. Historicaltestpixels only; no liveauthority."
+}

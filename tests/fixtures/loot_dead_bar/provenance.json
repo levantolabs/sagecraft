@@ -1,0 +1,40 @@
+{
+  "description": "Lossless crops of consecutive archived selected dead target health bars. Real observed corpse; no autonomous loot success claim.",
+  "records": [
+    {
+      "label": "before",
+      "decision_at": "2026-10-02T13:25:59.359367+00:00",
+      "source_frame_id": "41c14bb8-cd3c-40bf-a465-320909e74bf0",
+      "source_captured_at": "2026-10-02T13:25:55.257671+00:00",
+      "source_sha256": "0cdf4ea7479991721c3a5cd75c26ab324b6011d4fa1c93b3d5ced94c584d0b76",
+      "source_box": [
+        158,
+        545,
+        356,
+        568
+      ],
+      "fixture": "before.png",
+      "fixture_sha256": "29fc2645fe1478d9e042938ce0decb1db4e12851dc53322e818c730ad5b74904"
+    },
+    {
+      "label": "after",
+      "decision_at": "2026-10-02T13:26:03.953897+00:00",
+      "source_frame_id": "b25812c6-f773-4bfb-b7b1-87d2525edcf4",
+      "source_captured_at": "2026-10-02T13:25:59.622354+00:00",
+      "source_sha256": "3938335d59c5a4bf448d60e38236e632f18b6c1f85bb84603b1357178ec847f4",
+      "source_box": [
+        158,
+        545,
+        356,
+        568
+      ],
+      "fixture": "after.png",
+      "fixture_sha256": "d5d13ea5a6087a72a86624a728ba9a23e2873fe3f4ddeb30b2a3dfab86ead555"
+    }
+  ],
+  "pixel_difference": {
+    "mean": 0.6843800322061192,
+    "max_channel_difference": 11,
+    "fraction_pixels_above24": 0.0
+  }
+}

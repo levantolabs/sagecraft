@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'">
+  <title>Sage spectator HUD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="hud" class="is-idle phase-unavailable" aria-label="Sage live spectator HUD">
+    <section id="decision-card" class="decision-card" aria-label="Current activity">
+      <div class="card-topline"><span class="brand">SAGE<span>PLAYS</span></span><span id="state-label">UNAVAILABLE</span><span id="level-label" class="level-label">LVL ? → ?</span></div>
+      <div class="decision-main">
+        <div class="actor-orbit"><span id="actor-emoji" aria-hidden="true">◌</span><svg viewBox="0 0 80 80" aria-hidden="true"><circle class="ring-track" cx="40" cy="40" r="35"></circle><circle class="timer-ring" cx="40" cy="40" r="35"></circle></svg></div>
+        <div class="decision-copy"><p id="actor-label">LIVE FEED</p><h1 id="decision-title">WAITING FOR SAGE</h1><div class="timer-line"><strong id="timer-value">—</strong><span id="timer-label">No live update yet</span></div></div>
+      </div>
+      <div class="last-choice"><span id="choice-prefix">LAST CHOICE</span><strong id="last-choice">Waiting for a decision</strong><span id="folded-reaction" hidden></span></div>
+      <div class="card-bottom"><div class="actor-lanes" aria-hidden="true"><span data-actor="sage">🧠 BRAIN</span><span data-actor="harness">✋ HANDS</span><span data-actor="eyes">👀 EYES</span></div><span id="status-note">Feed unavailable</span></div>
+    </section>
+    <aside id="reaction" class="reaction" hidden aria-label="Game event">
+      <div class="reaction-art"><span id="reaction-icon" aria-hidden="true">⚡</span></div>
+      <div class="reaction-caption"><span>EVENT</span><strong id="reaction-caption"></strong><small id="reaction-note"></small></div>
+    </aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

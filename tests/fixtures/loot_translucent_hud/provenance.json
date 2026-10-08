@@ -1,0 +1,50 @@
+{
+  "trial": "recovery-level3-16",
+  "description": "Same selected dead Ragged Young Wolf HUD; scenery passes behind translucent bars. Cropped losslessly from retained decoded JPEGs.",
+  "records": [
+    {
+      "fixture": "before.png",
+      "source_sha256": "9b066b58addda6ca6b80c087f78f9bae2f959629b60e2f5906135222789a4010",
+      "source_box": [
+        145,
+        500,
+        480,
+        628
+      ],
+      "fixture_sha256": "cfa46b0eb00be8db8cb787667114666ee6114f59463c47a61c0ef7c7e6d96a6e"
+    },
+    {
+      "fixture": "occluded.png",
+      "source_sha256": "e6cccaf99c2f120aa147c47e238bb5a282e093ecb9d5802451a8c8b6e6498d27",
+      "source_box": [
+        145,
+        500,
+        480,
+        628
+      ],
+      "fixture_sha256": "d31326caf958a79a7fd535b2eff9538902620ef56e1b8aa88389c79900ae0da1"
+    },
+    {
+      "fixture": "after.png",
+      "source_sha256": "126a768cad2a969abc050aee060f377a77c24637e2ed108939dff9d4e7edf8fb",
+      "source_box": [
+        145,
+        500,
+        480,
+        628
+      ],
+      "fixture_sha256": "f9c36adab98e53b0bbb4275181dce4eb6b45604e80479a2ea365afa528eaa757"
+    },
+    {
+      "fixture": "player_alive.png",
+      "source_sha256": "c085eb8995953cd1fcc2ebeb0f5b7c6023cc87bc5ef9f373660def02a93a1698",
+      "source_box": [
+        191,
+        405,
+        436,
+        433
+      ],
+      "fixture_sha256": "d293bd92ced72a573e9ae9e3b7e64528f0fa4a5c3615fbd46c807b86ab4e4749"
+    }
+  ]
+}
