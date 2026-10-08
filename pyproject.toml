@@ -20,7 +20,7 @@ macos = [
     "pyobjc-framework-ApplicationServices>=10.3; sys_platform == 'darwin'",
     "pyobjc-framework-Vision>=10.3; sys_platform == 'darwin'",
 ]
-dev = ["pytest>=8.3,<9"]
+dev = ["pytest>=8.3,<9", "pytest-xdist>=3.6,<4"]
 spectator = ["pyobjc-framework-WebKit>=12.2.2,<13; sys_platform == 'darwin'"]
 
 [project.scripts]

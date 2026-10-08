@@ -35,7 +35,7 @@ async def exhausted_search(r):
 
 
 @pytest.mark.parametrize('clean',[False,True])
-def test_trial18_displacement_then_small_step_reenters_search(tmp_path,clean):
+def test_displacement_then_small_step_reenters_search(tmp_path,clean):
     async def run():
         r=TravelRig(tmp_path,clean=clean)
         try:

@@ -8,7 +8,7 @@ Python 3.12–3.14 and [uv](https://docs.astral.sh/uv/):
 
 ```sh
 uv sync --extra dev
-uv run pytest
+uv run pytest -n auto
 uv run sage-wow --data-dir data/demo replay examples/final-run-excerpt.jsonl
 ```
 

@@ -100,7 +100,7 @@ uv run sage-wow --data-dir data/demo replay examples/final-run-excerpt.jsonl
 
 This loads real events from the final session (options offered, Sage's choices, input receipts and the level-5 confirmation) into a local SQLite database and prints a summary.
 
-Run the tests with `uv run pytest`. They never touch the game, the network or your keyboard.
+Run the tests with `uv run pytest -n auto`. They never touch the game, the network or your keyboard.
 
 ## Play live
 
